@@ -23,7 +23,7 @@ class ReactMainActivity : ReactActivity() {
     }
 
     override fun getMainComponentName(): String {
-        return "App"
+        return "HelloWorld"
     }
 
     override fun createReactActivityDelegate(): ReactActivityDelegate {

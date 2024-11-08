@@ -12,7 +12,7 @@ pluginManagement {
         gradlePluginPortal()
     }
 
-    includeBuild("../node_modules/@react-native/gradle-plugin")
+    includeBuild("../../node_modules/@react-native/gradle-plugin")
 }
 
 plugins {
@@ -34,7 +34,7 @@ extensions.configure<com.facebook.react.ReactSettingsExtension> { autolinkLibrar
 //    }
 //}
 
-rootProject.name = "ComposeDemos"
+rootProject.name = "RnInAndroidDemos"
 
 include(":app")
-includeBuild("../node_modules/@react-native/gradle-plugin")
+includeBuild("../../node_modules/@react-native/gradle-plugin")
