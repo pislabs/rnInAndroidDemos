@@ -15,7 +15,7 @@ object BuildVal {
     // 目标sdk版本，一般用于android.defaultConfig.targetSdk
     const val TARGET_SDK_VERSION = 34
 
-    const val IS_NEW_ARCHITECTURE_ENABLED = true
+    const val IS_RN_NEW_ARCHITECTURE_ENABLED = false
 
-    const val IS_HERMES_ENABLED = true
+    const val IS_RN_HERMES_ENABLED = true
 }

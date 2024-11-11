@@ -11,6 +11,7 @@ import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.facebook.react.defaults.DefaultReactNativeHost
 import com.facebook.soloader.SoLoader
 import com.pislabs.composeDemos.BuildConfig
+import com.pislabs.composeDemos.modules.turn.TurnManager
 
 /**
  * MainApplication
@@ -34,10 +35,10 @@ class MainApplication : Application(), ReactApplication {
             }
 
             override val isNewArchEnabled: Boolean
-                get() = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED
+                get() = BuildConfig.IS_RN_NEW_ARCHITECTURE_ENABLED
 
             override val isHermesEnabled: Boolean
-                get() = BuildConfig.IS_HERMES_ENABLED
+                get() = BuildConfig.IS_RN_HERMES_ENABLED
         }
 
     override val reactHost: ReactHost
@@ -46,8 +47,10 @@ class MainApplication : Application(), ReactApplication {
     override fun onCreate() {
         super.onCreate()
 
+        TurnManager.init(this)
+
         SoLoader.init(this, false)
-        if(BuildConfig.IS_NEW_ARCHITECTURE_ENABLED) {
+        if(BuildConfig.IS_RN_NEW_ARCHITECTURE_ENABLED) {
             load(true, true, false)
         }
     }

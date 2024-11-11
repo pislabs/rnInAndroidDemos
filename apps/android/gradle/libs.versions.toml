@@ -1,7 +1,9 @@
 [versions]
 agp = "8.7.0"
+androidJsc = "r174650"
 constraintlayoutCompose = "1.0.1"
 gradle = "7.3.1"
+hermesAndroid = "0.76.1"
 kotlin = "2.0.21"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -23,8 +25,8 @@ constraintlayout = "2.2.0"
 [libraries]
 androidx-constraintlayout-compose = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "constraintlayoutCompose" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+android-jsc = { module = "org.webkit:android-jsc", version.ref = "androidJsc" }
 gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
-hermes-android = { module = "com.facebook.react:hermes-android" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -48,6 +50,7 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+react-hermes-android = { module = "com.facebook.react:hermes-android", version.ref = "hermesAndroid" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -11,11 +11,6 @@
     app:layout_constraintTop_toTopOf="parent"
     android:orientation="vertical"
     tools:context=".ui.react.ReactFrameActivity">
-    <Button
-        android:id="@+id/btn_loadRNPage"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="加载RN页面" />
     <FrameLayout
         android:id="@+id/react_native_fragment"
         android:layout_width="match_parent"

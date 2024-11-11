@@ -18,12 +18,21 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ui.react.TurnDemoActivity"
+            android:exported="true"
+            android:label="@string/title_activity_turn_demo"
+            android:theme="@style/Theme.RnInAndroidDemos">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
             android:name=".ui.main.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.RnInAndroidDemos">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

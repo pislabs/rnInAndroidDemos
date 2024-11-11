@@ -23,8 +23,8 @@ android {
             useSupportLibrary = true
         }
 
-        buildConfigField("Boolean", "IS_NEW_ARCHITECTURE_ENABLED", "${BuildVal.IS_NEW_ARCHITECTURE_ENABLED}")
-        buildConfigField("Boolean", "IS_HERMES_ENABLED", "${BuildVal.IS_HERMES_ENABLED}")
+        buildConfigField("Boolean", "IS_RN_NEW_ARCHITECTURE_ENABLED", "${BuildVal.IS_RN_NEW_ARCHITECTURE_ENABLED}")
+        buildConfigField("Boolean", "IS_RN_HERMES_ENABLED", "${BuildVal.IS_RN_HERMES_ENABLED}")
     }
 
     buildTypes {
@@ -118,12 +118,14 @@ dependencies {
     // Note: we intentionally don't specify the version number here as RNGP will take care of it.
     // If you don't use the RNGP, you'll have to specify version manually.
     implementation(libs.react.android)
+    implementation(libs.react.hermes.android)
 
-    if (BuildVal.IS_HERMES_ENABLED) {
-        implementation(libs.hermes.android)
-    } else {
-        implementation("org.webkit:android-jsc:+")
-    }
+//    if (BuildVal.IS_HERMES_ENABLED) {
+//        implementation(libs.react.hermes.android)
+//    } else {
+////        implementation(libs.android.jsc)
+//        implementation("org.webkit:android-jsc:+")
+//    }
 
     implementation(libs.koin.annotations)
     ksp(libs.koin.ksp.compiler)

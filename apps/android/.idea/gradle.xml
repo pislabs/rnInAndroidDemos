@@ -12,13 +12,13 @@
                   <project path="$PROJECT_DIR$/buildSrc" />
                 </projects>
               </build>
-              <build path="$PROJECT_DIR$/../node_modules/@react-native/gradle-plugin" name="gradle-plugins-root">
+              <build path="$PROJECT_DIR$/../../node_modules/@react-native/gradle-plugin" name="gradle-plugins-root">
                 <projects>
-                  <project path="$PROJECT_DIR$/../node_modules/@react-native/gradle-plugin" />
-                  <project path="$PROJECT_DIR$/../node_modules/@react-native/gradle-plugin/react-native-gradle-plugin" />
-                  <project path="$PROJECT_DIR$/../node_modules/@react-native/gradle-plugin/settings-plugin" />
-                  <project path="$PROJECT_DIR$/../node_modules/@react-native/gradle-plugin/shared" />
-                  <project path="$PROJECT_DIR$/../node_modules/@react-native/gradle-plugin/shared-testutil" />
+                  <project path="$PROJECT_DIR$/../../node_modules/@react-native/gradle-plugin" />
+                  <project path="$PROJECT_DIR$/../../node_modules/@react-native/gradle-plugin/react-native-gradle-plugin" />
+                  <project path="$PROJECT_DIR$/../../node_modules/@react-native/gradle-plugin/settings-plugin" />
+                  <project path="$PROJECT_DIR$/../../node_modules/@react-native/gradle-plugin/shared" />
+                  <project path="$PROJECT_DIR$/../../node_modules/@react-native/gradle-plugin/shared-testutil" />
                 </projects>
               </build>
             </builds>
@@ -32,11 +32,11 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/buildSrc" />
-            <option value="$PROJECT_DIR$/../node_modules/@react-native/gradle-plugin" />
-            <option value="$PROJECT_DIR$/../node_modules/@react-native/gradle-plugin/react-native-gradle-plugin" />
-            <option value="$PROJECT_DIR$/../node_modules/@react-native/gradle-plugin/settings-plugin" />
-            <option value="$PROJECT_DIR$/../node_modules/@react-native/gradle-plugin/shared" />
-            <option value="$PROJECT_DIR$/../node_modules/@react-native/gradle-plugin/shared-testutil" />
+            <option value="$PROJECT_DIR$/../../node_modules/@react-native/gradle-plugin" />
+            <option value="$PROJECT_DIR$/../../node_modules/@react-native/gradle-plugin/react-native-gradle-plugin" />
+            <option value="$PROJECT_DIR$/../../node_modules/@react-native/gradle-plugin/settings-plugin" />
+            <option value="$PROJECT_DIR$/../../node_modules/@react-native/gradle-plugin/shared" />
+            <option value="$PROJECT_DIR$/../../node_modules/@react-native/gradle-plugin/shared-testutil" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

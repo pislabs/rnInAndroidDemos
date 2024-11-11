@@ -116,6 +116,7 @@ import androidx.constraintlayout.compose.Dimension
 import com.pislabs.composeDemos.R
 import com.pislabs.composeDemos.ui.react.ReactFrameActivity
 import com.pislabs.composeDemos.ui.react.ReactMainActivity
+import com.pislabs.composeDemos.ui.react.TurnDemoActivity
 import com.pislabs.composeDemos.ui.theme.ComposeDemosTheme
 import kotlinx.coroutines.launch
 
@@ -137,8 +138,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     var selectedItemIndex by remember { mutableIntStateOf(0) }
     val items = listOf(
         Item("Home", R.drawable.img_avatar),
-        Item("React", R.drawable.img_avatar),
-        Item("Settings", R.drawable.img_avatar),
+        Item("Activity", R.drawable.img_avatar),
+        Item("Fragment", R.drawable.img_avatar),
+        Item("Turn", R.drawable.img_avatar),
     )
 
     ModalNavigationDrawer(
@@ -183,9 +185,14 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
                             onClick = {
                                 selectedItemIndex = index
                                 when (item.name) {
-                                    "React" -> {
+                                    "Activity" -> {
                                        ReactMainActivity.start(context)
-                                        // ReactFrameActivity.start(context)
+                                    }
+                                    "Fragment" -> {
+                                        ReactFrameActivity.start(context)
+                                    }
+                                    "Turn" -> {
+                                        TurnDemoActivity.start(context)
                                     }
                                 }
                             },

@@ -11,6 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.facebook.react.ReactFragment
 import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler
 import com.pislabs.composeDemos.R
+import com.pislabs.composeDemos.modules.turn.react.TurnReactFragment
 
 class ReactFrameActivity : AppCompatActivity(), DefaultHardwareBackBtnHandler {
     companion object {
@@ -31,17 +32,20 @@ class ReactFrameActivity : AppCompatActivity(), DefaultHardwareBackBtnHandler {
             insets
         }
 
-        findViewById<Button>(R.id.btn_loadRNPage).setOnClickListener {
-            val reactNativeFragment = ReactFragment.Builder()
-                .setComponentName("App")
-                .setLaunchOptions(Bundle().apply { putString("message", "my value") })
-                .build()
+        loadRnPage()
+    }
 
-            supportFragmentManager
-                .beginTransaction()
-                .add(R.id.react_native_fragment, reactNativeFragment)
-                .commit()
-        }
+    private fun loadRnPage() {
+//        val reactNativeFragment = ReactFragment.Builder()
+        val reactNativeFragment = TurnReactFragment.Builder()
+            .setComponentName("HelloWorld")
+            .setLaunchOptions(Bundle().apply { putString("message", "my value") })
+            .build()
+
+        supportFragmentManager
+            .beginTransaction()
+            .add(R.id.react_native_fragment, reactNativeFragment)
+            .commit()
     }
 
     override fun invokeDefaultOnBackPressed() {
